@@ -45,6 +45,7 @@ let reloadGrid = () => {
 }
 
 let changeColor = (e) => {
+  e.preventDefault();
   if(e.type === 'mouseover' && !mouseDown) return
   if(mode == 'color') {
     e.target.style.background = '#333'
